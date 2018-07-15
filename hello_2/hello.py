@@ -2,4 +2,8 @@ import sys
 
 if len(sys.argv) > 1:
     name = sys.argv[1]
-    print("Saluton", name)
+else:
+    name = input("Bonvolu diru min vian nomo")
+    if name == '': name = 'Gogeta tiam'
+
+print("Saluton", name)
